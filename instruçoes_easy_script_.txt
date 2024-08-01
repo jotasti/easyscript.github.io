@@ -1,0 +1,30 @@
+##instrucoes_de_uso##
+
+# Sobre
+## O que é o EasyScript?
+
+O EasyScript é uma aplicação projetada para criar scripts de provisionamento de ONTs e ONUs em lote de forma rápida e simplificada.
+
+# Texto
+Os seriais capturados são aplicados individualmente, com um serial por script. Você pode inserir qualquer texto, independentemente do tamanho, e a aplicação irá filtrar automaticamente os seriais presentes, ignorando todo o conteúdo restante.
+
+# VLAN
+A VLAN é aplicada ao script através de uma variável correspondente, sendo replicada em todos os scripts gerados.
+
+# Slot
+O Slot é aplicado ao script através de uma variável correspondente, sendo replicado em todos os scripts gerados.
+
+# PON
+A PON é aplicada ao script através de uma variável correspondente, sendo replicada em todos os scripts gerados.
+
+# Gemport
+O Gemport é aplicado ao script através de uma variável correspondente, sendo replicado em todos os scripts gerados.
+
+# Variável Sequencial
+A variável sequencial adiciona um número ao script no campo correspondente, gerando uma sequência entre 1 e 127. Esse valor indica a quantidade máxima de ONUs/ONTs permitidas por PON.
+
+# Último Contador
+Se você precisa gerar muitos scripts, pode inserir um texto contendo vários seriais e gerar todos de uma vez. Lembre-se de que a OLT permite um máximo de 127 scripts por PON. Se estiver gerando scripts individuais ou divididos em grupos menores, você pode informar o valor do último contador, que é o número sequencial entre 1 e 127. A aplicação então irá gerar os novos scripts a partir do contador informado (Ex.: Se você inserir 2, o próximo script será 3) até o valor limite.
+
+# Download do Arquivo TXT
+Após gerar o script, um arquivo .txt será baixado automaticamente para o seu dispositivo, contendo todo o conteúdo do script conforme exibido na tela.
