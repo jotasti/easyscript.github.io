@@ -100,15 +100,15 @@
             border: none;
             outline: none;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 13px;
             width: calc(100% - 16px); 
         }
-        input.texto {
-            height: 70px;
+        textarea.texto {
+            height: 200px;
             resize: auto;
         }
         label {
-            display: block;
+            display: block; 
             margin-bottom: 5px;
             color: white;
             font-size: 13px;
@@ -117,11 +117,12 @@
             width: 100%;
             height: 100%;
             border: none;
+            border-radius: 5px;
             background-color: #f1f1f1;
-            font-size: 14px;
+            font-size: 13px;
             color: #00153E;
             resize: none;
-            padding: 10px;
+            padding: 20px;
             box-sizing: border-box;
             overflow-y: scroll;
         }
@@ -160,19 +161,19 @@
         <div class="login-box">
             <form id="scriptForm">
                 <label for="texto">Cole ou digite o texto:</label>
-                <input type="text" name="texto" id="texto" class="texto" placeholder="*Insira até 127 seriais." class="inputUser" required/>
+                <textarea name="texto" id="texto" placeholder="Cole aqui o máximo de 127 seriais por vez." class="inputUser" required></textarea>
                 <br><br>
                 <label for="vlan">Defina a Vlan:</label>
-                <input type="number" name="vlan" id="vlan" placeholder="*Será aplicada a todos os scripts" class="inputUser" required/>
+                <input type="number" name="vlan" id="vlan" placeholder="   Será aplicada a todos os scripts" class="inputUser" required/>
                 <br><br>
                 <label for="slot">Defina o Slot:</label>
-                <input type="number" name="slot" id="slot" placeholder="*Será aplicado a todos os scripts" class="inputUser" required/>
+                <input type="number" name="slot" id="slot" placeholder="   Será aplicado a todos os scripts" class="inputUser" required/>
                 <br><br>
                 <label for="pon">Defina a Pon:</label>
-                <input type="number" name="pon" id="pon" placeholder="*Será aplicada a todos os scripts" class="inputUser" required/>
+                <input type="number" name="pon" id="pon" placeholder="   Será aplicada a todos os scripts" class="inputUser" required/>
                 <br><br>
                 <label for="gemport">Defina o Gemport:</label>
-                <input type="number" name="gemport" id="gemport" placeholder="*Será aplicado a todos os scripts" class="inputUser" required/>
+                <input type="number" name="gemport" id="gemport" placeholder="   Será aplicado a todos os scripts" class="inputUser" required/>
                 <br><br>
                 <label for="ultimoContador">Informe o último contador:</label>
                 <input type="number" name="ultimoContador" id="ultimoContador" placeholder="Apenas se for dar sequência a lista anterior">
