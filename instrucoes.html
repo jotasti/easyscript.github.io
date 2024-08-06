@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções de uso</title>
+</head>
+<style>
+    body {
+            font-family: "Roboto", sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .navbar {
+            width: 100%;
+            background-image: linear-gradient(to right, #00153E, #002467, #17357D);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 5px 10px;
+            position: fixed;
+            top: 0;
+        }
+        .navbar img {
+            max-height: 40px; /* Altura máxima da imagem */
+            margin-left: 10px; /* Espaçamento à esquerda */
+        }
+        .navbar a {
+            color: #f7f7f8;
+            text-decoration: none;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #1693A5;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            align-items: center;
+            text-align: justify;
+            justify-content: center;
+            gap: 10px;
+            height: 80vh;
+        }
+    h1{
+        color: black;
+        font-size: 15px;
+        text-align: justify;
+        width: 100%;
+    }
+    h2{
+        color: black;
+        font-size: 10   px;
+        text-align: justify;
+    }
+    h3{
+        color: rgb(27, 26, 26);
+        font-size: 10px;
+        text-align: justify;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <img src="./logo_easy_script_.png" class="logo-box" alt="Logo"> <!-- Aqui está a imagem -->
+        <a href="./index.html">Voltar</a>
+    </div>
+    <div class="container">
+<h1>// Sobre o EasyScript ></h1>
+
+<h3>O EasyScript é uma aplicação projetada para criar scripts de provisionamento de ONTs e ONUs em lote de forma rápida e simplificada.</h3>    
+
+<h1>// Texto ></h1>
+<h3>Os seriais capturados são aplicados individualmente, com um serial por script. Você pode inserir qualquer texto, independentemente do tamanho, e a aplicação irá filtrar automaticamente os seriais presentes, ignorando todo o conteúdo restante.</h3> 
+<h1>// Vlan ></h1>
+<h3>A VLAN é aplicada ao script através de uma variável correspondente, sendo replicada em todos os scripts gerados.</h3>
+<h1>// Slot ></h1>
+<h3>O Slot é aplicado ao script através de uma variável correspondente, sendo replicado em todos os scripts gerados.</h3>
+<h1>// Pon ></h1>
+<h3>A PON é aplicada ao script através de uma variável correspondente, sendo replicada em todos os scripts gerados.</h3>
+<h1>// Gemport ></h1>
+<h3>O Gemport é aplicado ao script através de uma variável correspondente, sendo replicado em todos os scripts gerados.</h3>
+<h1>// Variável Sequencial ></h1>
+<h3>A variável sequencial adiciona um número ao script no campo correspondente, gerando uma sequência entre 1 e 127. Esse valor indica a quantidade máxima de ONUs/ONTs permitidas por PON.</h3>
+<h1>// Último Contador ></h1>
+<h3>Se você precisa gerar muitos scripts, pode inserir um texto contendo vários seriais e gerar todos de uma vez. Lembre-se de que a OLT permite um máximo de 127 scripts por PON. Se estiver gerando scripts individuais ou divididos em grupos menores, você pode informar o valor do último contador, que é o número sequencial entre 1 e 127. A aplicação então irá gerar os novos scripts a partir do contador informado (Ex.: Se você inserir 2, o próximo script será 3) até o valor limite.</h3>
+<h1>// Download do Arquivo TXT ></h1>
+<h3>Após gerar o script, um arquivo .txt será baixado automaticamente para o seu dispositivo, contendo todo o conteúdo do script conforme exibido na tela.</h3>
+</div>
+</body>
+</html>

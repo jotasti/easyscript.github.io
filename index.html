@@ -11,7 +11,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
             margin: 0;
         }
         .navbar {
@@ -20,13 +19,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            text-align: center;
             padding: 5px 10px;
             position: fixed;
             top: 0;
+        }   
+        .navbar img {
+            max-height: 40px;
+            margin-left: 10px;
         }
         .navbar a {
             color: #00153E;
             text-decoration: none;
+            align-items: center;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -34,16 +39,12 @@
         .navbar a:hover {
             background-color: #1693A5;
         }
-        .logo-box {
-            margin-top: 20px;
-            max-width: 250px;
-        }
         .container {
             display: flex;
             align-items: stretch;
             justify-content: center;
             gap: 10px;
-            margin-top: auto;
+            margin-top: 100px;
             width: 100%;
             max-width: 800px;
         }
@@ -151,14 +152,9 @@
     </style>
 </head> 
 <body>
-    <!--<div class="navbar">
-        <a href="#">JS EasyScript</a>
-        <div>
-            <a href="https://wa.me/ZP">Suporte ao usuario</a>
-        </div>
-    </div>-->
-    <div class="logo-box">
-        <img src="./logo_easy_script_.png" class="logo-box" alt="Logo">
+    <div class="navbar">
+        <img src="./logo_easy_blue_.png" class="logo-box" alt="Logo"> <!-- Aqui está a imagem -->
+        <a href="./instrucoes.html">Instruções de uso</a>
     </div>
     <div class="container">
         <div class="login-box">
@@ -170,7 +166,7 @@
                 <input type="number" name="vlan" id="vlan" placeholder="*Será aplicada a todos os scripts" class="inputUser" required/>
                 <br><br>
                 <label for="slot">Defina o Slot:</label>
-                <input type="number" name="slot" id="slot" placeholder="*Será aplicada a todos os scripts" class="inputUser" required/>
+                <input type="number" name="slot" id="slot" placeholder="*Será aplicado a todos os scripts" class="inputUser" required/>
                 <br><br>
                 <label for="pon">Defina a Pon:</label>
                 <input type="number" name="pon" id="pon" placeholder="*Será aplicada a todos os scripts" class="inputUser" required/>
